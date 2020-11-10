@@ -83,7 +83,7 @@ namespace Statement
             string[] answers = new string[500];
             double[] values = {5, 4, 3, 2};
             int next = 0;
-            if ((score == 5) || (score == 4))           //
+            if (score != 2)           //
             for (int i = 0; i < values.Length -1; i++)  //фильтр генерации оценок только из 5 4 3. Length -1 уберает
                                                         //2, чтоб не было оценок вида 5 5 5 2 5 итог 4
             {                                           //
