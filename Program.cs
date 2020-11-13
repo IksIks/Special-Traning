@@ -137,11 +137,11 @@ namespace Statement
             }
             else
             {
-            for (int i = 0; i < values.Length; i++)
+            for (int i = 1; i < values.Length; i++)
             {
-                for (int j = 0; j < values.Length; j++)
+                for (int j = 1; j < values.Length; j++)
                 {
-                    for (int k = 0; k < values.Length; k++)
+                    for (int k = 1; k < values.Length; k++)
                     {
                         switch (column)
                         {
@@ -157,9 +157,9 @@ namespace Statement
                                 break;
 
                             case 5:
-                                for (int l = 0; l < values.Length; l++)
+                                for (int l = 1; l < values.Length; l++)
                                 {
-                                    for (int m = 0; m < values.Length; m++)
+                                    for (int m = 1; m < values.Length; m++)
                                     {                                        
                                         average = (values[i] + values[j] + values[k] + values[l] + values[m]) / 5;
                                         averageMath = Math.Round((values[i] + values[j] + values[k] + values[l] + values[m]) / 5);
@@ -241,7 +241,7 @@ namespace Statement
                         theoryScore[j] = random;
                         break;
                     case 4:
-                        random = r.Next(4, 6);      // изменил 3 на 4 чтоб было поменьше оценок 54245
+                        random = r.Next(3, 6);      // изменил 3 на 4 чтоб было поменьше оценок 54245
                         theoryScore[j] = random;
                         break;
                     case 3:
