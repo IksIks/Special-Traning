@@ -241,7 +241,7 @@ namespace Statement
                         theoryScore[j] = random;
                         break;
                     case 4:
-                        random = r.Next(3, 6);      // изменил 3 на 4 чтоб было поменьше оценок 54245
+                        random = r.Next(4, 6);      // изменил 3 на 4 чтоб было поменьше оценок 54245
                         theoryScore[j] = random;
                         break;
                     case 3:
